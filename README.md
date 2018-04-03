@@ -8,7 +8,7 @@
 
 阅读机器学习入门书籍，遇到一些 公式也别太着急，没那么复杂，稍微变换一下思路，如下面这个公式：
 
-![https://github.com/little51/ai-helloworld/blob/master/loss.png]()
+![](https://github.com/little51/ai-helloworld/blob/master/loss.png)
 
 描述损失函数，实际上就累加，写成下面这段代码大家就看明白了。在编写tensorflow代码时，x、y的数据（可以理解成数组，专业术语叫张量）可以一句带入，不用写循环。如果x是多维，样本量大，则这样的计算就非常多，而且全是浮点运算，所以需要GPU。
 

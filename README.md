@@ -23,7 +23,7 @@ for(int i=0;i++;i<n){
 
 ### （1）思路
 
-tensorflow等入门书，将Hello World!用图像识别来描述，难度还是相当高的，首先，得先明白tensor的概念，点阵灰度图像的张量表示也得花点功夫理解，还要学习占位符，线性回归等，门槛比较高。比较好理解的学习思路是：先搞明白机器学习的最简单用法，不要一下引入太多概念，而且例子相对完整，然后在此基础上，再深入学习。
+tensorflow的入门书，将Hello World!用手写体识别、图像分类来描述，难度还是相当高的，首先，得先明白tensor的概念，点阵灰度图像的张量表示也得花点功夫理解，还要学习占位符，线性回归等，门槛比较高。比较好理解的学习思路是：先搞明白机器学习的最简单用法，不要一下引入太多概念，而且例子相对完整，然后在此基础上，再深入学习。
 
 ### （2）基本原理
 
@@ -43,9 +43,9 @@ Hello world最好是以找函数关系举例，如输入x有10种情况，x = [1
 
 tensorflow最为流行，但比较底层，pytorch支持动态图，也比较好理解，但在windows上不好安装。入门可以选keras，keras可以当成是tensorflow的API，在keras搞明白机器学习的基本原理后，有必要的话再转到tensorflow，这样会轻松很多。关于keras的安装，网上文章很多，这个对于程序员没难度，不详细讲了。
 
-## 4、机器学习的Hello world!
+## 4、keras版的Hello world
 
-线性回归的hello world源程序如下，使用“python 文件名”运行。
+keras实现线性回归的hello world源程序如下，使用“python 文件名”运行。
 
 ```python
 from keras.models import Sequential
@@ -111,7 +111,7 @@ plt.plot(h.epoch ,h.history['loss'])
 plt.show()
 ```
 
-## 5、Hello world的tensorflow版本
+## 5、tensorflow版本的Hello world
 
 掌握了keras版本的Hello world后，可以用tensorflow实现相同的功能。tensorflow 比keras更底层一些，需要明确计算图、损失函数等，y = w*x + b要显式申明。
 
@@ -203,3 +203,6 @@ print(test_x)
 print(target_test)
 ```
 
+## 总结
+
+通过一个简单的线性回归的例子，可基本上搞明白机器学习的一般原理，遇到具体场景的开发，只要满足线性回归，则以上的程序几乎不用大的修改，只是参数的个数、维度不一样而已。在此基础上，再学习其他算法。
